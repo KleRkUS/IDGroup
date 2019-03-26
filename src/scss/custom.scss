@@ -1,0 +1,82 @@
+@import "node_modules/bootstrap/scss/bootstrap";
+//COLORS
+    $scrollbarColor: #b2b1bf;
+    $scrollbarHover: #908f9d;
+    $info-color: #b1b1b1;
+    $header-nav-color: #1d354a;
+    $pink: #f7087a;
+    $grey-text-color: #bababa;
+    $blue: #9cd9e4;
+    $p-color: #6c7d91;
+    $post-text-color: #434b52;
+    $post-inactive-color: #fff;
+    $post-active-color: #74bfcc;
+    $post-gradient: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, .12));
+    $sec-left-text-color: #d9d9d9;
+    $carousel-active-color: rgba(118, 195, 209, .65);
+//SHADOWS
+    $post-active-preview: 0px 0px 20px #d7dee3;
+    $header-shadow: 0px 5px 5px rgba(0, 0, 0, .25);
+    $post-inactive-shadow: 0px 0px 20px rgba(215, 222, 227, .4) inset;
+    $post-active-shadow: 12px 0px 24px rgba(44, 125, 206, .32);
+    $poster-shadow: 0px 10px 30px #000;
+    $zoom-shadow: 0px 0px 20px rgba(0, 0, 0, .5);
+//SIZES
+    //preview-icons
+    $width-1: 1.7em;
+    $width-2: 1.1em;
+    $width-3: 2.5em;
+    //padding
+    $grid-gutter-width: 2em;
+    //breakpoints
+    $breakpoint-xl: 1280px;
+    $breakpoint-lg: 1024px;
+    $breakpoint-md: 744px;
+    $breakpoint-sm: 500px;
+/* ------------------- MIXINS ------------------*/
+//FONTS
+    @mixin Gotham-Bold {
+        font: {
+            family: 'Gotham Pro';
+            style: normal;
+            weight: bold; 
+        }
+    }
+    @mixin Gotham-Med {
+        font: {
+            family: 'Gotham Pro';
+            style: normal;
+            weight: 500; 
+        }
+    }
+    @mixin Gotham-Reg {
+        font: {
+            family: 'Gotham Pro';
+            style: normal;
+            weight: normal; 
+        }
+    }
+    @mixin Roboto-Black {
+        font: {
+            family: 'Roboto';
+            style: normal;
+            weight: 900; 
+        }
+    }
+    @mixin UTMAvo-Bold {
+        font: {
+            family: 'UTMAvoBold';
+            style: normal;
+            weight: normal; 
+        }
+    }
+/* ---------- CUSTOM SCROLLBAR --------*/
+::-webkit-scrollbar {
+    width: 1em;
+}
+::-webkit-scrollbar-thumb {
+    background: $scrollbarColor;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: $scrollbarHover;
+}

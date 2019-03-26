@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Post</title>
+        <meta charset="utf-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="css/style.bundle.css">
+        <link rel="shortcut icon" href="favicon/favicon.ico">
+    </head>
+    <body>
+        <header class="container-fluid" id="info"> 
+            <div class="container">
+                <div class="row">
+                    <div class="col first-col">
+                        <select name="city" id="city-select">
+                            <option value="spb">
+                                Санкт-Петербург
+                            </option>
+                            <option value="msk">
+                                Москва
+                            </option>   
+                        </select>
+                    </div>
+                    <div class="col">
+                        <div class="row">
+                            <span class="col-8 header__email">
+                                zakaz@печатьнахолсте.рф
+                            </span>
+                            <ul class="col-4 header__web nav">
+                                <li>
+                                    <a href="#">
+                                        <img src="img/web-1.png" alt="vk">
+                                    </a>
+                                </li><!--
+                                --><li>
+                                    <a href="#">
+                                        <img src="img/web-2.png" alt="fb">
+                                    </a>    
+                                </li><!--
+                                --><li>
+                                    <a href="#">
+                                        <img src="img/web-3.png" alt="ok">
+                                    </a>    
+                                </li><!--
+                                --><li>
+                                    <a href="#">
+                                        <img src="img/web-4.png" alt="insta">
+                                    </a>  
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="header container-fluid" id="header">
+            <div class="header__content container">
+                <div class="row">
+                    <div class="col-3 logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="GRAFFIT">
+                        </a>
+                    </div>
+                    <div class="col-3">
+                        <ul class="nav row">
+                                <li>
+                                    <a href="index.html">
+                                        главная
+                                    </a>
+                                </li><!--
+                            --><li>
+                                    <a href="#">
+                                        доставка
+                                    </a>
+                                </li><!--
+                            --><li>
+                                    <a href="#">
+                                        контакты
+                                    </a>
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="col-2 header__button">
+                        <button class="order-button">
+                            заказать
+                        </button>
+                    </div>
+                    <div class="col-3 header__phone">
+                        <img src="img/phone.png" alt="phone">
+                        <span>Звоните сейчас!</span>
+                        <h3>8 800 70 75 31</h3>
+                    </div>
+                    <div class="col-1 basket">
+                        <img src="img/basket.png" alt="basket">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid first-page" id="first-page">
+            <div class="container">
+                <div class="row">
+                    <div class="preview-form col-4">
+                        <h1>печать на холсте</h1>
+                        <h2>с вашим изображением</h2>
+                        <div class="row">
+                            <div class="col">
+                                <div class="preview-block active-preview preview-blocks" id="first-preview" data-type="1">
+                                    <div class="preview-icon"></div><br>    
+                                    Прямоуг.
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="preview-block preview-blocks" data-type="2">
+                                    <div class="preview-icon"></div><br>    
+                                    Квадрат
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="preview-block preview-blocks" data-type="3">
+                                    <div class="preview-icon"></div><br>    
+                                    Панорама
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="container-fluid">  
+                                <div class="preview-selector preview-blocks">
+                                    <label for="preview-select">
+                                        Размер:
+                                    </label>
+                                    <select name="select" id="preview-select">
+                                        <option value="80x120">
+                                            80 x 120   
+                                        </option>
+                                        <option value="800x1200">
+                                            800 x 1200
+                                        </option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row preview-files-row">
+                            <div class="container-fluid preview-files-cont preview-blocks" id="preview-files">
+                                <div class="preview-blocks preview-files" id="preview-files__inner">
+                                    <img src="img/files_inactive.png" alt="file" id="files__img">
+                                    <div>
+                                        <h2>Перетащите сюда изображение</h2>
+                                        <h3>Или нажмите и выберите файл</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container-fluid">
+                            <div class="row preview-order">
+                                <div class="col-7">
+                                        <span>1000руб.-</span>
+                                        <img src="img/basket.png" alt="basket">
+                                </div>
+                                <div class="col-5">
+                                    <button class="order-button">заказать</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2"></div>
+                    <div class="col-6 poster-wrapper">
+                        <div class="poster" id="poster"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="second-page container-fluid" id="second-page">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4"></div>
+                    <div class="col-8">
+                        <div class="profit-block">
+                            <img src="img/icon1.png" alt="">
+                            <div class="text">
+                                <h2>Картонный задник</h2>
+                                <p>Прародителем текста-рыбы является известный "Lorem Ipsum" – лат</p>
+                            </div>
+                        </div><!--
+                        --><div class="profit-block">
+                            <img src="img/icon2.png" alt="">
+                            <div class="text">
+                                <h2>Воспользуйтесь доставкой</h2>       
+                                <p>Прародителем текста-рыбы является известный "Lorem Ipsum" – лат</p>
+                            </div>
+                        </div><!--
+                        --><div class="profit-block">
+                            <img src="img/icon3.png" alt="">
+                            <div class="text">
+                                <h2>Холст покрывается лаком</h2>
+                                <p>Прародителем текста-рыбы является известный "Lorem Ipsum" – лат</p>
+                            </div>
+                        </div><!--
+                        --><div class="profit-block">
+                            <img src="img/icon4.png" alt="">
+                            <div class="text">
+                                <h2>ЭКО материалы</h2>
+                                <p>Прародителем текста-рыбы является известный "Lorem Ipsum" – лат</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="carousel-wrapper container-fluid">
+            <div class="carousel" id="carousel">
+                <div class="img">
+                    <img src="img/carousel1.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                    </div><!--
+                --><div class="img">
+                    <img src="img/carousel2.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel3.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel4.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel5.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel6.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel7.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel1.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel2.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel3.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel4.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel5.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel6.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel7.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel1.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel2.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel3.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel4.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel5.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div><!--
+                --><div class="img">
+                    <img src="img/carousel6.png" alt="img" class="carousel__img">
+                    <div class="img__inner">
+                        <img src="img/zoom.png" alt="zoom">
+                    </div>
+                </div>  
+            </div>
+        </div>
+    <script type="text/javascript" src="bundle.js"></script>
+    </body>
+</html>

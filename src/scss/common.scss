@@ -1,0 +1,66 @@
+@import "custom.scss";
+* {
+	-webkit-transition: all ease-in-out .2s;
+	   -moz-transition: all ease-in-out .2s;
+	    -ms-transition: all ease-in-out .2s;
+	     -o-transition: all ease-in-out .2s;
+	        transition: all ease-in-out .2s;
+}
+
+//CLASSES
+
+body {
+	overflow-x: hidden;
+}
+
+.nav {
+	height: 100%;
+	font-size: .6em;
+	@extend %vertical-center-parent;
+	li {
+		list-style: none;
+		@extend %vertical-center-child;
+		text-transform: uppercase;
+	}
+	a {
+		color: $header-nav-color;
+			&:hover {
+				text-decoration: none;
+				color: $header-nav-color;
+			}
+	}
+}
+
+.order-button {
+	padding: 1.125em 2.938em;
+	background: $pink;
+	@include Gotham-Bold;
+	text-transform: uppercase;
+	-webkit-border-radius: 0.5em;
+	        border-radius: 0.5em;
+	color: #fff;
+	border: none;
+	font-size: .7em;
+}
+
+.preview-blocks {
+	background: #FFF;
+	-webkit-border-radius: 1em;
+	        border-radius: 1em;
+}
+
+//TEMPLATES
+
+%vertical-center-parent {
+	&:after {
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+		content: '';
+	}
+}
+
+%vertical-center-child {
+	vertical-align: middle;
+	display: inline-block;
+}
